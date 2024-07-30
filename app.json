@@ -1,0 +1,48 @@
+{
+  "name": "TresAxes",
+  "displayName": "TresAxes",
+  "expo": {
+    "name": "TresAxes",
+    "slug": "TresAxes",
+    "scheme": "tresaxes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tresaxes",
+      "permissions": ["INTERNET"],
+      "softwareKeyboardLayoutMode": "adjustResize"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tresaxes"
+    },
+    "web": {
+      "splash": {
+        "backgroundColor": "#FFFFFF"
+      },
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  },
+  "ignite": {
+    "version": "9.0.2-alpha.1"
+  }
+}
