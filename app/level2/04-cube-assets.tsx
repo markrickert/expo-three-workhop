@@ -52,15 +52,10 @@ class RemoteMeshCube extends MeshCube {
 class LocalMeshCube extends MeshCube {
   constructor() {
     super();
-    const loader = new THREE.TextureLoader();
     Asset.loadAsync(require("assets/adaptive-icon.png")).then(([{ localUri }]) => {
-      try {
-        loader.load(localUri, (texture) => {
-          this.material = new THREE.MeshBasicMaterial({ map: texture });
-        });
-      } catch (error) {
-        console.error(error);
-      }
+      loadAsync(localUri).then((texture) => {
+        this.material = new THREE.MeshBasicMaterial({ map: texture });
+      });
     });
   }
 }
